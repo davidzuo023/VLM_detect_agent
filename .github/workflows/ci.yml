@@ -34,5 +34,7 @@ jobs:
         echo "LLM_MODEL=qwen3.6-plus" >> .env
 
     - name: Run tests (tools only, no API key needed)
+      env:
+        PYTHONPATH: .
       run: |
         pytest tests/test_tools.py -v --tb=short
