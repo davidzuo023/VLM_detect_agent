@@ -1,0 +1,49 @@
+# ===== 绝对不能上传的文件 =====
+.env
+.env.local
+.env.*.local
+*.key
+secrets/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 虚拟环境 =====
+venv/
+env/
+ENV/
+.venv/
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===== 输出文件 =====
+outputs/
+logs/
+*.log
+
+# ===== 临时文件 =====
+tmp/
+temp/
+*.tmp
